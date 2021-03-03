@@ -1,0 +1,25 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/socicraft/client
+hooks:
+  # preinstall task||decrypting files and creating a backup of the current version.
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: root
+  #Install
+  #config and change permissions
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 300
+      runas: root
+    #   ApplicationStart:
+    - location: scripts/app_start.sh
+      timeout: 300
+      runas: root
+#  ApplicationStop:
+#     - location: scripts/stop_server.sh
+#       timeout: 300
+#       runas: root
