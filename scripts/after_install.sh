@@ -1,4 +1,4 @@
 #!/bin/bash
 cd  /home/socicraft/cliemt
 
-npm run build
+npm run install
