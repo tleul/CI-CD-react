@@ -5,10 +5,10 @@ files:
     destination: /home/socicraft/cliemt
 hooks:
   # preinstall task||decrypting files and creating a backup of the current version.
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
-      runas: root
+  # BeforeInstall:
+  #   - location: scripts/install_dependencies.sh
+  #     timeout: 300
+  #     runas: root
   #Install
   #config and change permissions
   AfterInstall:
