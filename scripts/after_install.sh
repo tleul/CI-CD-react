@@ -1,4 +1,4 @@
 #!/bin/bash
-cd  /home/socicraft/client
+cd  /home/socicraft/cliemt
 
 npm run build

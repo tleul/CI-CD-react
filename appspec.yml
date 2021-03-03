@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/socicraft/client
+    destination: /home/socicraft/cliemt
 hooks:
   # preinstall task||decrypting files and creating a backup of the current version.
   BeforeInstall:
